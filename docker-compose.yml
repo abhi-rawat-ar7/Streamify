@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  backend:
+    image: shubhobera09/youtube-backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+
+  frontend:
+    image: shubhobera09/youtube-frontend
+    ports:
+      - "4000:4000"
